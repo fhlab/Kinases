@@ -1,4 +1,9 @@
 *.pyc
 .idea
 *.iml
+<<<<<<< HEAD
 .ipynb_checkpoints
+=======
+**/.ipynb_checkpoints
+*.html
+>>>>>>> master

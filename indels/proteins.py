@@ -82,8 +82,13 @@ def protein_needle(prot_files, reffile):
         prefix, suffix = os.path.splitext(fqname)
         alnname = prefix + '.aln'
         needle_cline = NeedleallCommandline(r'needleall', asequence=reffile, bsequence=fqname,
+<<<<<<< HEAD
                                             gapopen=3, gapextend=5, datafile='PNULL',
                                             verbose=False, outfile=alnname, aformat='fasta') # alternative: (r'/opt/emboss/bin/needleall'
+=======
+                                            gapopen=3, gapextend=5, datafile='PNULL',auto=True, options=False,
+                                            verbose=False, outfile=alnname, aformat='fasta')
+>>>>>>> master
         needle_cline()
 
     return aln_files
